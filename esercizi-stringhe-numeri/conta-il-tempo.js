@@ -12,11 +12,13 @@
 
   http://www.imparareaprogrammare.it
 */
-var tempo;
-var sc_min=60;
-var min_ora=60;
-input ('scrivi il tempo che vuoi calcolare /"in secondi": 'tempo);
-secondi = tempo%sc_min;
-minuti = tempo%(sc_min/min_ora);
-ore = tempo/sc_min/min_ora;
-console.log(ore,minuti,secondi);
+var tempo=780364; //tempo complessivo in secondi
+var sc_min=60; //secondi in un minuto
+var min_ora=60; //minuti in un'min_ora
+var secondi = (tempo%(sc_min)); //resto dei secondi da minuti e ore
+var minuti = ((tempo-secondi)/sc_min)%min_ora;//resto dei minuti dalle ore
+var ore = (tempo-secondi-(minuti*sc_min))/(sc_min*min_ora);//calcolo delle ore effettive
+//output
+console.log('ore: '+ ore);
+console.log('minuti: ' + minuti);
+console.log('secondi: ' + secondi);
