@@ -11,3 +11,11 @@
 
   http://www.imparareaprogrammare.it
 */
+var anno=2019;
+var annoNascita=1972;
+var anni=anno-annoNascita;
+var ai=100-anni;
+console.log('Attualmente siamo nel ' + anno );
+console.log('Il mio anno di nascita è ' + annoNascita );
+console.log('Attualmente ho ' + anni + ' anni' );
+console.log('Compirò 100 anni fra ' + ai + ' anni' );
