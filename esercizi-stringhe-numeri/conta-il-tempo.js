@@ -12,3 +12,11 @@
 
   http://www.imparareaprogrammare.it
 */
+var tempo;
+var sc_min=60;
+var min_ora=60;
+input ('scrivi il tempo che vuoi calcolare /"in secondi": 'tempo);
+secondi = tempo%sc_min;
+minuti = tempo%(sc_min/min_ora);
+ore = tempo/sc_min/min_ora;
+console.log(ore,minuti,secondi);
