@@ -17,4 +17,16 @@
 
   http://www.imparareaprogrammare.it
 */
-var cats=44
+var gatti=100;
+var fila=8;
+var file=(gatti/fila);
+var ultimi=gatti%fila;
+var mancanti=fila-(gatti%fila);
+console.log('numero di gatti: ' + gatti);
+console.log('numero di gatti per ogni fila: ' + fila);
+console.log('numero di file: ' + Math.ceil(file));
+console.log('numero di gatti nell\'ultima fila: ' + ultimi);
+if (ultimi==0){
+    mancanti=0;
+}else mancanti=fila-(gatti%fila);
+console.log('gatti mancanti per completare l\'ultima fila: ' + mancanti);
